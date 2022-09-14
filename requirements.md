@@ -9,8 +9,12 @@ DONE!
 DONE!
 
 4. After clicking on "Copy to clipboard" the generated password will be copied to clipboard.
+DONE!
 
 
 5. A alert should appear after clicking on "Copy to clipboard" informing that the action was successful
+DONE!
 6. Regenerate button should be able to regenerate a new password with the same given length.
+DONE!
 7. User can toggle between raw text and hidden text in password section.
+DONE!
