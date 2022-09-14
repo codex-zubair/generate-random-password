@@ -31,7 +31,7 @@ const handleCheckbox = () => {
 
 const generatePassword = () => {
   let passwordEl = document.getElementById("password");
-  console.log(passwordEl);
+
 
   const charCount = document.getElementById("char-count").innerText;
 
@@ -47,6 +47,7 @@ const generatePassword = () => {
   }
 
   passwordEl.value = password;
+  // TODO Need to remove it.
   console.log(passwordEL);
 
 };
@@ -67,10 +68,9 @@ const handleViewPassword = () => {
 };
 
 const handleCopy = () => {
-  const copyText = document.getElementById("password");
-  console.log(copyText.innerText);
+  let copyText = document.getElementById("password");
   copyText.select();
-  document.getElementById("copy");
+  document.execCommand("copy");
   alert("Password copied to clipboard");
 };
 
