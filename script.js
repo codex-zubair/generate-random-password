@@ -30,7 +30,8 @@ const handleCheckbox = () => {
 };
 
 const generatePassword = () => {
-  let passwordEl = document.getElementById("password").value;
+  let passwordEl = document.getElementById("password");
+  console.log(passwordEl);
 
   const charCount = document.getElementById("char-count").innerText;
 
@@ -45,8 +46,8 @@ const generatePassword = () => {
 
   }
 
-  passwordEl = password;
-  console.log(password);
+  passwordEl.value = password;
+  console.log(passwordEL);
 
 };
 
@@ -67,6 +68,7 @@ const handleViewPassword = () => {
 
 const handleCopy = () => {
   const copyText = document.getElementById("password");
+  console.log(copyText.innerText);
   copyText.select();
   document.getElementById("copy");
   alert("Password copied to clipboard");
